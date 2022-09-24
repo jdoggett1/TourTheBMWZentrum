@@ -1,0 +1,15 @@
+ul {
+  list-style-image: url(images/smiley.gif);
+}
+h2 {
+  text-align: center;
+}
+h3,
+p {
+  text-align: left;
+  padding-left: 235px;
+  padding-right: 235px;
+}
+body {
+  background-color: lightblue;
+}

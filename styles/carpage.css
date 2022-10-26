@@ -93,3 +93,20 @@ p {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.2em;
 }
+
+/*---------Table Below-----------*/
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  border-spacing: 0;
+  padding-top: 20px;
+  width: 700px;
+}
+tr,
+td,
+th {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}

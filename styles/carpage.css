@@ -91,7 +91,9 @@ h1 {
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*---------Table Below-----------*/
@@ -101,7 +103,9 @@ table {
   margin-left: auto;
   border-spacing: 0;
   padding-top: 20px;
-  width: 700px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
 }
 tr,
 td,

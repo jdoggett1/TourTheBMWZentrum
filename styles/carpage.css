@@ -95,6 +95,12 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
+.references {
+  font-size: .5em;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
 
 /*---------Table Below-----------*/
 
@@ -114,3 +120,29 @@ th {
   padding: 3px;
   text-align: center;
 }
+
+/*-----Continue Tour Button-------*/
+
+
+.tourbtn {
+  background-color: rgba(0, 97, 182, 0.659);
+  border: 1px solid lightgray;
+  font-family: "Bebas Neue", cursive;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  color: white;
+  font-size: 30px;
+  padding: 5px 25px 5px 25px;
+  border-radius: 10px;
+}
+.tourbtn:hover {
+  background-color: rgb(18, 210, 95, 0.8);
+  color: white;
+  cursor: pointer;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+

@@ -1,0 +1,128 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    font-family: "Bebas Neue", cursive;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Bebas Neue", cursive;
+    margin: 0;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: burlywood;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130.68px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*---------Navbar Above---------*/
+
+
+form {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+  }
+  #email,
+  #fname,
+  #cntry {
+    line-height: 45px;
+    display: inline-block;
+    width: 75px;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+  }
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+    background-color: rgb(129, 196, 255);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #fset {
+    border-color: lightgray;
+    border-width: 1px;
+  }
+  #fset2 {
+    border-color: lightgray;
+    border-width: 1px;
+  }
+  #select-prod {
+    width: 200px;
+  }
+  #grade {
+    line-height: 35px;
+  }
+  #fullname,
+  #emailaddress,
+  #country {
+    width: 200px;
+  }
+  .smbr {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  legend {
+    font-weight: bold;
+  }  

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Your Favorite!</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#">About the Author</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Jump To Page
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="z8.html">1999 BMW Z8 Roadster</a>
+            <a href="z1.html">1989 BMW Z1</a>
+            <a href="86m3.html">1986 BMW M3</a>
+            <a href="319.html">1934 BMW 319</a>
+            <a href="dixi.html">1930 Ihle DIXI Roadster</a>
+            <a href="isetta.html">1955 BMW Isetta</a>
+            <a href="m3gt.html">2009 BMW M3 GT</a>
+            <a href="fw22.html">Williams FW22 F1 Racecar</a>
+            <a href="other.html">Other Vehicles on Display</a>
+            <a href="pfcntr.html">Performance Driving Center</a>
+          </div>
+        </div>
+      </div>
+    <h1>Which Was Your Favorite?</h1>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+      <span class="smbr"></span>
+      <fieldset id="fset">
+        <legend>Your Information:</legend>
+        <div>
+          <label id="fname" for="fullname">Name:</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Enter your name here"
+          />
+        </div>
+        <div>
+          <label id="email" for="emailaddress">Email:</label>
+          <input
+            type="email"
+            placeholder="Enter your email here"
+            id="emailaddress"
+          />
+        </div>
+        <div>
+          <label id="cntry" for="country-choice">Country:</label>
+          <input
+          type="text"
+          name="country"
+          id="country"
+          placeholder="Enter your country here"
+          />
+
+          <datalist id="country-options">
+            <option value="United States"></option>
+            <option value="Canada"></option>
+            <option value="France"></option>
+            <option value="Switzerland"></option>
+          </datalist>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset id="fset2">
+        <legend>Your Review:</legend>
+        <div>
+          <label id="grade" for="select-prod"
+            >Which Was Your Favorite Car?</label
+          >
+          <select name="car" id="select-car">
+            <option value="z8">1999 Z8 Roadster</option>
+            <option value="z1">1989 Z1</option>
+            <option value="m3">1986 M3</option>
+            <option value="319">1934 319</option>
+            <option value="dixi">1930 Ihle Dixi</option>
+            <option value="isetta">1955 Isetta</option>
+            <option value="m3gt">2009 M3 GT</option>
+          </select>
+        </div>
+        <span class="smbr"></span>
+        <div>
+          <label for="comments">What Made This Your Favorite Car?</label>
+        </div>
+        <div>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+          <span class="smbr"></span>
+          <input
+            type="checkbox"
+            id="updates"
+            name="updates singup"
+            value="yes"
+            checked
+          />
+          <label for="updates">Sign me up for email updates</label>
+        </div>
+        <span class="smbr"></span>
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </fieldset>
+      <span class="smbr"></span>
+    </form>
+  </body>
+</html>

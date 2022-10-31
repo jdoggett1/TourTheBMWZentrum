@@ -74,6 +74,11 @@ body {
   margin-right: auto;
   width: 50%;
   padding-bottom: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .center {
   display: block;
@@ -88,15 +93,8 @@ h1 {
   font-size: 80px;
   text-align: center;
 }
-p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  text-align: justify;
-  text-justify: inter-word;
-}
 .references {
-  font-size: .5em;
+  font-size: 0.5em;
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -123,7 +121,6 @@ th {
 
 /*-----Continue Tour Button-------*/
 
-
 .tourbtn {
   background-color: rgba(0, 97, 182, 0.659);
   border: 1px solid lightgray;
@@ -145,4 +142,3 @@ th {
   align-items: center;
   padding-top: 40px;
 }
-

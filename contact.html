@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Screen</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Jump To Page
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="z8.html">1999 BMW Z8 Roadster</a>
+          <a href="z1.html">1989 BMW Z1</a>
+          <a href="86m3.html">1986 BMW M3</a>
+          <a href="319.html">1934 BMW 319</a>
+          <a href="dixi.html">1930 Ihle DIXI Roadster</a>
+          <a href="isetta.html">1955 BMW Isetta</a>
+          <a href="m3gt.html">2009 BMW M3 GT</a>
+          <a href="fw22.html">Williams FW22 F1 Racecar</a>
+          <a href="other.html">Other Vehicles on Display</a>
+          <a href="pfcntr.html">Performance Driving Center</a>
+        </div>
+      </div>
+    </div>
+    <h1>Reach Out!</h1>
+    <p>
+      I'd greatly appreciate your feedback about your virtual tour experience!
+      Please leave any comments below!
+    </p>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <span class="smbr"></span>
+        <fieldset id="fset">
+          <legend>Your Information:</legend>
+          <div>
+            <label id="fname" for="fullname">Name:</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter your name here"
+            />
+          </div>
+          <div>
+            <label id="email" for="emailaddress">Email:</label>
+            <input
+              type="email"
+              placeholder="Enter your email here"
+              id="emailaddress"
+            />
+          </div>
+          <div>
+            <label for="comments">Feeback:</label>
+          </div>
+          <div>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+          </div>
+          <div>
+            <span class="smbr"></span>
+            <input
+              type="checkbox"
+              id="updates"
+              name="updates singup"
+              value="yes"
+              checked
+            />
+            <label for="updates">Sign me up for email updates</label>
+          </div>
+          <span class="smbr"></span>
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+        <span class="smbr"></span>
+      </form>
+  </body>
+</html>

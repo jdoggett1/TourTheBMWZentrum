@@ -191,6 +191,8 @@ img {
   position: absolute;
   transition: opacity .5s ease-in;
   max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 img + img { opacity: 0; }

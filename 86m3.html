@@ -9,6 +9,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-64XLQBYKHR');
+
+  function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+
+   function boldFont() {
+         var element = document.body;
+         element.classList.toggle("bold-font");
+      }
 </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,6 +57,9 @@
         </div>
       </div>
     </div>
+    <div class="center">
+    <button class="togglebtn" onclick="darkMode()">Toggle Dark Mode</button><button class="togglebtn" onclick="boldFont()">Toggle Bold Font</button>
+  </div>
     <h1>1986 BMW M3</h1>
     <p>
       “Since its Wheels first officially touch the track in 1986, the M3 has

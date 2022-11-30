@@ -9,6 +9,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-64XLQBYKHR');
+
+  function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+
+   function boldFont() {
+         var element = document.body;
+         element.classList.toggle("bold-font");
+      }
 </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,6 +56,9 @@
           <a href="pfcntr.html">Performance Driving Center</a>
         </div>
       </div>
+    </div>
+    <div class="center">
+      <button class="togglebtn" onclick="darkMode()">Toggle Dark Mode</button><button class="togglebtn" onclick="boldFont()">Toggle Bold Font</button>
     </div>
     <h1>1930 Ihle DIXI Roadster</h1>
     <p>

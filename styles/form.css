@@ -139,17 +139,16 @@ text-align: center;
   }
 
 
-.formspc
+.spacer
 {
-  padding-top: 20px;
-  padding-bottom: 200px;
+margin-bottom: 20px;
 }
 
 /*----dark mode & bold font-----*/
 
 .dark-mode {
   background-color: rgb(0, 4, 72);
-  color: rgb(235, 249, 255);
+  color: black;
 }
 
 .bold-font {
@@ -179,3 +178,14 @@ text-align: center;
   align-items: center;
   padding-top: 40px;
 }
+
+
+/*----slideshow----*/
+
+img {
+  position: absolute;
+  transition: opacity .5s ease-in;
+  max-width: 500px;
+}
+
+img + img { opacity: 0; }

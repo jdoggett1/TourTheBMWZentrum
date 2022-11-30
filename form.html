@@ -20,6 +20,16 @@
          element.classList.toggle("bold-font");
       }
 
+var current = 0,
+slides = document.getElementsByTagName("img");
+
+setInterval(function() {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  current = (current != slides.length - 1) ? current + 1 : 0;
+  slides[current].style.opacity = 1;
+}, 5000);
 
 </script>
     <meta charset="UTF-8" />
@@ -34,7 +44,6 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <div class="navbar">
@@ -64,7 +73,7 @@
         <button class="togglebtn" onclick="darkMode()">Toggle Dark Mode</button><button class="togglebtn" onclick="boldFont()">Toggle Bold Font</button>
       </div>
     <h1>Which Was Your Favorite?</h1>
-    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+    <form class="spacer" action="https://oim-apis.herokuapp.com/form2" method="post">
       <span class="smbr"></span>
       <fieldset id="fset">
         <legend>Your Information:</legend>
@@ -145,6 +154,11 @@
       </fieldset>
       <span class="smbr"></span>
     </form>
+    <br>
 
+    <img src="images/z8collage.png">
+    <img src="images/z1collage.png">
+    <img src="images/86m3collage.png">
+    
   </body>
 </html>

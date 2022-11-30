@@ -144,6 +144,11 @@ text-align: center;
 margin-bottom: 20px;
 }
 
+#comments
+{
+  max-width: 445px;
+}
+
 /*----dark mode & bold font-----*/
 
 .dark-mode {

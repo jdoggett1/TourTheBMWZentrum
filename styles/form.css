@@ -74,9 +74,10 @@ form {
     margin-right: auto;
     background-color: white;
     padding: 10px;
+  
   }
   #email,
-  #fname,
+  #name,
   #cntry {
     line-height: 45px;
     display: inline-block;

@@ -78,7 +78,7 @@ setInterval(function() {
       <fieldset id="fset">
         <legend>Your Information:</legend>
         <div>
-          <label id="fname" for="fullname">Name:</label>
+          <label id="name" for="fullname">Name:</label>
           <input
             type="text"
             name="fullname"
@@ -103,12 +103,6 @@ setInterval(function() {
           placeholder="Enter your country here"
           />
 
-          <datalist id="country-options">
-            <option value="United States"></option>
-            <option value="Canada"></option>
-            <option value="France"></option>
-            <option value="Switzerland"></option>
-          </datalist>
         </div>
       </fieldset>
       <br />
@@ -149,7 +143,7 @@ setInterval(function() {
         </div>
         <span class="smbr"></span>
         <div>
-          <button type="submit">Submit</button>
+          <button id="submit-btn" type="submit">Submit</button>
           <button type="reset">Reset</button>
         </div>
       </fieldset>
@@ -162,4 +156,23 @@ setInterval(function() {
     <img src="images/86m3collage.png">
 
   </body>
+  <script>
+    function validate(){
+    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('name').value;
+    if(!regName.test(name)){
+        alert('Please enter your full name (first & last name).');
+        document.getElementById('name').focus();
+        return false;
+    }else{
+        return true;
+    }
+}
+
+document
+        .querySelector("#submit-btn")
+        .addEventListener("click", function () {
+          validate();
+        });
+  </script>
 </html>
